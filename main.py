@@ -23,7 +23,7 @@ async def on_message(message):
         return
     if(message.content.startswith("!r.new")):
       try:
-        print(str[7:])
+        
         subs = reddit.subreddit(str[7:]).new()
 
         post_to_pick = random.randint(1,100)
